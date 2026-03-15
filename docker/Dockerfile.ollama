@@ -1,0 +1,10 @@
+# Ollama - Self-Hosted LLM Service
+# https://www.ollama.ai/
+
+FROM ollama/ollama:latest
+
+EXPOSE 11434
+
+# Pre-pull models (optional, will download ~7GB)
+# These will be cached for faster access
+CMD ["serve"]

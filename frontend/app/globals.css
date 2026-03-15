@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Monaco Editor styling */
+.monaco-editor {
+  @apply font-mono text-sm;
+}
+
+.editor-container {
+  @apply rounded-lg overflow-hidden border border-dark-tertiary;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-tertiary;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-secondary hover:bg-accent-blue rounded;
+}
+
+/* Button styles */
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+}
+
+.btn-primary {
+  @apply bg-accent-blue hover:bg-blue-600 text-white;
+}
+
+.btn-secondary {
+  @apply bg-dark-secondary hover:bg-dark-tertiary text-white;
+}
+
+/* Card styles */
+.card {
+  @apply bg-dark-secondary rounded-lg border border-dark-tertiary p-4;
+}
